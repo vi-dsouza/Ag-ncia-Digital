@@ -1,0 +1,54 @@
+/* Reset CSS moderno */
+
+/* Remove margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Herda a fonte do sistema para uma melhor consistência */
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  scroll-behavior: smooth;
+}
+
+/* Remove estilos padrão de listas */
+ol, ul {
+  list-style: none;
+}
+
+/* Remove decoração de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ajusta imagens para não ultrapassarem seus containers */
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Torna botões mais consistentes */
+button, input, textarea, select {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+/* Ajusta cursor de botões */
+button {
+  cursor: pointer;
+}
+
+/* Melhora a acessibilidade e legibilidade do texto */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: black;
+}

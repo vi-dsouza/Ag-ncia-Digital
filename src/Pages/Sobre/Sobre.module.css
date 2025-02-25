@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black; 
+  padding: 0 20px;
+}
+
+.principal {
+  background: rgba(255, 255, 255, 0.425);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 70vh;
+  gap: 25px;
+}
+
+.texto {
+  flex: 1;
+}
+
+.principal h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ddac5d; 
+  margin-bottom: 20px; 
+  font-family: 'Arial', sans-serif; 
+}
+
+.principal p {
+  font-size: 1.2rem; 
+  line-height: 1.8; 
+  color: white; 
+  font-family: 'Arial', sans-serif; 
+  margin-bottom: 30px; 
+  text-align: justify;
+}
+
+.imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsividade */
+
+/* Tablets e telas médias */
+@media(max-width: 760px) {
+  .principal {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imagem {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .principal h1 {
+    font-size: 2.5rem;
+  }
+
+  .principal p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+}
+
+/* Celulares pequenos */
+@media(max-width: 480px) {
+  .container {
+    padding: 30px 8px;
+  }
+
+  .principal {
+    height: 60%;
+    padding: 15px;
+  }
+
+  .imagem {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .principal h1 {
+    font-size: 2rem;
+  }
+
+  .principal p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+}
+
+/* Telas grandes */
+@media(min-width: 1500px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .principal {
+    gap: 40px;
+    
+  }
+
+  .imagem {
+    width: 40%;
+  }
+
+  .principal h1 {
+    font-size: 3.5rem;
+  }
+
+  .principal p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+}

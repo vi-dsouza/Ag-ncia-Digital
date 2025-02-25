@@ -1,0 +1,88 @@
+.container {
+    background-color: #1a1a1a; 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+    justify-content: center;
+}
+
+.logo img {
+    width: 33%;
+    height: 33%; 
+    object-fit: cover;
+}
+
+.contato {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contato h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #C29D60;
+}
+
+.contato p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.direitos {
+    margin-top: 20px;
+    font-size: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.direitos a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.direitos a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 50px;
+    }
+
+    .logo, .contato, .direitos {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    .logo {
+        justify-content: flex-start;
+    }
+
+    .contato {
+        text-align: center;
+    }
+
+    .direitos {
+        text-align: right;
+        border-top: none;
+        padding-top: 0;
+    }
+}

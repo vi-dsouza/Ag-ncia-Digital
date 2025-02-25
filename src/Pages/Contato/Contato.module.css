@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #7e7e7e;
+}
+
+.texto {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.texto h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 12px;
+    margin-top: 3%;
+    letter-spacing: 1px;
+}
+
+.texto p {
+    font-size: clamp(1rem, 3vw, 1.6rem);
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    height: 80vh;
+    max-width: 1200px;
+    margin-top: 1px;
+    justify-content: center;
+}
+
+.colunaEsquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    width: 50%;
+    height: 95%;
+}
+
+.redes {
+    text-align: center;
+    background: linear-gradient(145deg, #000000, #222222);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+.redes h2 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.iconesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.icones {
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #C29D60;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones:hover {
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .container{
+        height: 100%;
+    }
+    .contatos {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        height: 100%;
+    }
+    .container .texto h1{
+        font-size: 2.5rem;
+    }
+    .container .texto p{
+        font-size: 1.5rem;
+    }
+    .colunaEsquerda{
+        width: 100%;
+    }
+}
+
+@media(min-width: 1400px){
+    .container{
+        padding: 4vw;
+    }
+
+    .contatos{
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 460px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .contatos {
+        width: 100%;
+        height: 60%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .colunaEsquerda{
+        width: 100%;
+    }
+    .container .texto h1{
+        font-size: 2.2rem;
+    }
+    .container .texto p{
+        font-size: 1.5rem;
+    }
+}

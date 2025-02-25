@@ -1,0 +1,263 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #333;
+    flex-direction: column;
+    padding: 5vw;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    color: white;
+    animation: slideInLeft 1s ease-in-out;
+    margin-bottom: 5vw;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    gap: 30px;
+    width: 90%;
+    max-width: 350px; 
+    animation: pop 0.8s ease-in-out;
+    background: rgba(2, 2, 2, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 60%;
+    max-width: 150px;
+    margin: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(228, 227, 227, 0.2);
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.info h2 {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    color: #C29D60;
+}
+
+.info p {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    color: white;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5vw;
+    flex-wrap: wrap;
+}
+
+.icones {
+    cursor: pointer;
+    color: #C29D60;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 1.8rem;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.icones:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+@media(max-width: 1024px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card img {
+        width: 50%;
+    }
+
+    .info h2 {
+        font-size: 1.6rem;
+    }
+
+    .info p {
+        font-size: 1.2rem;
+    }
+
+    .icones {
+        font-size: 2rem;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        min-height: auto;
+        height: 100vh;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 25%;
+    }
+
+    .card {
+        width: 85%;
+        gap: 20px;
+        height: 60vh;
+    }
+
+    .card img {
+        width: 55%;
+    }
+
+    .info h2 {
+        font-size: 1.4rem;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+
+    .icones {
+        font-size: 1.8rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 480px) {
+    .container {
+        padding: 0 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        min-height: 100vh; 
+        gap: 10%;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin-top: 20%; 
+        margin-bottom: 20px; 
+    }
+
+    .card {
+        width: 95%;
+        height: 50%;
+        gap: 15px;
+    }
+
+    .card img {
+        width: 65%;
+    }
+
+    .info h2 {
+        font-size: 1.4rem;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+
+    .icones {
+        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media(max-width: 320px) {
+    .container h1 {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        width: 98%;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .card img {
+        width: 70%;
+    }
+
+    .info h2 {
+        font-size: 1rem;
+    }
+
+    .info p {
+        font-size: 0.8rem;
+    }
+
+    .icones {
+        font-size: 1.2rem;
+        width: 30px;
+        height: 30px;
+    }
+}

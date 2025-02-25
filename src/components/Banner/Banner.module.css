@@ -1,0 +1,56 @@
+.containerBanner {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black; 
+    position: relative; 
+}
+
+.containerBanner img {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: inherit; 
+    background-color: black; 
+    border-radius: 60px 60px 0 0;
+}
+
+@media (max-width: 1024px) {
+    .containerBanner {
+        height: 350px;
+        background-color: black; 
+        border-radius: 60px 60px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerBanner {
+        height: 280px;
+        background-color: black; 
+        border-radius: 1px 1px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerBanner {
+        width: 100%;
+        height: 220px;
+        border-radius: 1px 1px 0 0;
+        background-color: black; 
+    }
+}
+
+@media(max-width: 460px){
+    .containerBanner {
+        width: 100%;
+        height: 220px;
+        border-radius: 1px 1px 0 0;
+        background-color: black; 
+    }
+}
