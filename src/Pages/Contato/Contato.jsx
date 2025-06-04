@@ -18,7 +18,7 @@ const Contato = () => {
           <div className={styles.redes}>
             <h2>Nossas Redes</h2>
             <div className={styles.iconesContainer}>
-              <a href={import.meta.env.VITE_WHATSAPP} target="_blank" rel="noopener noreferrer">
+              <a href={"https://wa.me/5534999353881"} target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className={styles.icones} />
               </a>
               <a href={import.meta.env.VITE_INSTAGRAM} target="_blank" rel="noopener noreferrer">
