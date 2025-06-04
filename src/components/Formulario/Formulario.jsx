@@ -19,7 +19,7 @@ const Formulario = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch("https://backend-da-agencia.vercel.app",  {
+        const response = await fetch("https://backend-da-agencia.vercel.app/enviar-email",  {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
