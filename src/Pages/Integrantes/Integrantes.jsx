@@ -14,16 +14,16 @@ const Integrantes = () => {
                 <h2>Vitória Stéfane de Souza</h2>
                 <p>CEO e Desenvolvedora Front-end</p>
                 <div className={styles.redes}>
-                    <a href={import.meta.env.VITE_WHATSAPP} target="_blank" rel="noopener noreferrer">
+                    <a href={"https://wa.me/5534999353881"} target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp className={styles.icones} />
                     </a>
-                    <a href={import.meta.env.VITE_INSTAGRAM} target="_blank" rel="noopener noreferrer">
+                    <a href={"https://www.instagram.com/vi.dsouza"} target="_blank" rel="noopener noreferrer">
                         <Instagram className={styles.icones} />
                     </a>
-                    <a href={import.meta.env.VITE_EMAIL}>
+                    <a href="mailto:vistefanesouza@gmail.com">
                         <MdEmail className={styles.icones} />
                     </a>
-                    <a href={import.meta.env.VITE_LINKEDIN}>
+                    <a href={"https://www.linkedin.com/in/vit%C3%B3ria-st%C3%A9fane-de-souza-1b100a1a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
                         <Linkedin className={styles.icones} />
                     </a>
                 </div>
